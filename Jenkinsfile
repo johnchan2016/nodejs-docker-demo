@@ -7,6 +7,6 @@ node {
 
         /* Push the container to the custom Registry */
         customImage.push("latest")
-        customImage.push("1.1.6")
+        customImage.push("1.1.7")
     }
 }
