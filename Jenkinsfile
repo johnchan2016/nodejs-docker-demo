@@ -6,7 +6,7 @@ node {
         def customImage = docker.build("myhk2009/sample-microservices")
 
         /* Push the container to the custom Registry */
-        customImage.push("latest")
+        //customImage.push("latest")
         customImage.push("1.2.1")
     }
 }
