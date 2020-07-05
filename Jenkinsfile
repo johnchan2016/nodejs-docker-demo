@@ -1,4 +1,8 @@
 node {
+    environment {
+        VERSION_NUMBER = '1.2.1'
+    }
+
     checkout scm
 
     docker.withRegistry("https://registry.hub.docker.com", 'dockerHubCredentials') {
@@ -7,6 +11,6 @@ node {
 
         /* Push the container to the custom Registry */
         //customImage.push("latest") 
-        customImage.push("1.2.1")
+        customImage.push("${VERSION_NUMBER}")
     }
 }
